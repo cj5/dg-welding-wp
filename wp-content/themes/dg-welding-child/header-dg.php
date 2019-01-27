@@ -15,11 +15,13 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="<?php bloginfo('description') ?>" />
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/wp-content/themes/dg-welding-child/dist/css/main.min.css">
-  <title>DG Welding</title>
+
+  <?php wp_head(); ?>
 
 </head>
 
