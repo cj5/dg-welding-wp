@@ -1,18 +1,5 @@
 <?php
 
-/**
-* The template for displaying all pages
-*
-* This is the template that displays all pages by default.
-* Please note that this is the WordPress construct of pages
-* and that other 'pages' on your WordPress site may use a
-* different template.
-*
-* @link https://developer.wordpress.org/themes/basics/template-hierarchy/
-*
-* @package Underscores
-*/
-
 /*
 Template Name: Home
 */
@@ -28,6 +15,12 @@ get_header('dg'); ?>
       </h1>
   </div>
 </div>
+
+<div class="container">
+  <p class="py-6">< our services carousel here ></p>
+</div>
+
+<?php include('includes/contact.php'); ?>
 
 <?php
 

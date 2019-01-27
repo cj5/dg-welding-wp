@@ -47,7 +47,7 @@
         <div class="nav-links">
           <ul class="d-flex">
             <li>
-              <a href="/">Home</a>
+              <a href="/" class="active">Home</a>
             </li>
             <li>
               <a href="/about">About</a>
