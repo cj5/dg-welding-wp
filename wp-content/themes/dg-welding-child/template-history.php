@@ -7,7 +7,7 @@ Template Name: History
 get_header('dg'); ?>
 
 <div class="history">
-  <img src="../../assets/images/ribbon-2.jpg" alt="" class="pb-6">
+  <img src="/wp-content/uploads/2019/01/ribbon-2.jpg" alt="" class="pb-6">
   <div class="content">
     <div class="container pb-6">
       <h2 class="mb-4">History</h2>
@@ -17,7 +17,7 @@ get_header('dg'); ?>
   <Contact />
 </div>
 
-<?php include('includes/contact.php') ?>
+<?php include('includes/contact.php'); ?>
 
 <?php
 

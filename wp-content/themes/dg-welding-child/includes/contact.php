@@ -8,21 +8,21 @@
           <h4 class="mb-4">Located right off of 13 and Yankee Doodle in Eagan, MN</h4>
           <div class="d-flex flex-column">
             <a href="#" class="mb-2">
-              <LocationIcon />
+            <?php include('location-icon.php'); ?>
               <span class="icon-wrapper">
                 <svg class="icon icon-location"><use xlink:href="#icon-location"></use></svg>
               </span>
               3265 Sun Drive, Eagan MN 55121
             </a>
             <a href="#" class="mb-2">
-              <PhoneIcon />
+            <?php include('phone-icon.php'); ?>
               <span class="icon-wrapper">
                 <svg class="icon icon-phone"><use xlink:href="#icon-phone"></use></svg>
               </span>
               651-688-2358
             </a>
             <a href="mailto:info@dg-welding.com">
-              <EmailIcon />
+            <?php include('email-icon.php'); ?>
               <span class="icon-wrapper">
                 <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
               </span>

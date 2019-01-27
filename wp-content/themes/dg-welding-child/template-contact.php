@@ -12,7 +12,7 @@ get_header('dg'); ?>
   </div>
 </div>
 
-<?php include('includes/contact.php') ?>
+<?php include('includes/contact.php'); ?>
 
 <?php
 

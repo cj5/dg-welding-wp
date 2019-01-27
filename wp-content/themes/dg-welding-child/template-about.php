@@ -7,7 +7,7 @@ Template Name: About
 get_header('dg'); ?>
 
 <div class="about">
-  <img src="../../assets/images/ribbon-1.jpg" alt="" class="pb-6">
+  <img src="/wp-content/uploads/2019/01/ribbon-1.jpg" alt="" class="pb-6">
   <div class="container content pb-6">
     <h2 class="mb-4">About</h2>
     <p>DG Welding &amp; Mfg. is a private, family owned welding and steel fabrication shop based in Eagan, Minnesota.</p>

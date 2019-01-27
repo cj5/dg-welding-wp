@@ -36,6 +36,9 @@ html {
   img {
     width: 100%;
   }
+  .hide {
+    display: none;
+  }
   .pseudo-underline {
     position: relative;
     &:before {
@@ -111,7 +114,7 @@ html {
   .hero {
     position: relative;
     width: 100%;
-    background: url('assets/images/hero-2.jpg') 0 0 no-repeat;
+    background: url('/wp-content/uploads/2019/01/hero-2.jpg') 0 0 no-repeat;
     background-size: cover;
     height: 500px;
     .filter {
