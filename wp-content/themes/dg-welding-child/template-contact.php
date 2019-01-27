@@ -6,10 +6,10 @@ Template Name: Contact
 
 get_header('dg'); ?>
 
-<div class="content">
-  <div class="container">
+<div class="container">
+  <section class="content">
     <h2 class="py-6">Contact</h2>
-  </div>
+  </section>
 </div>
 
 <?php include('includes/contact.php'); ?>

@@ -50,19 +50,19 @@
         <div class="nav-links">
           <ul class="d-flex">
             <li>
-              <a href="/" class="active">Home</a>
+              <a href="/" class="active home">Home</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about" class="about">About</a>
             </li>
             <li>
-              <a href="/history">History</a>
+              <a href="/history" class="history">History</a>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <a href="/gallery" class="gallery">Gallery</a>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <a href="/contact" class="contact">Contact</a>
             </li>
           </ul>
         </div>
