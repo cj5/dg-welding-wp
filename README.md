@@ -1,4 +1,4 @@
-# DG Welding site
+# dg-welding-wp
 
 This is a website built for DG Welding & Mfg.
 
