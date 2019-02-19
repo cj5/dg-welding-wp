@@ -10,6 +10,7 @@ var setNavItemActive = function setNavItemActive(pageSlug, navItem) {
   }
 };
 
+setNavItemActive('', '.home');
 setNavItemActive('about', '.about');
 setNavItemActive('history', '.history');
 setNavItemActive('gallery', '.gallery');

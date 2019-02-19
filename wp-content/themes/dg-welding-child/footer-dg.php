@@ -16,22 +16,26 @@
   <div class="border-top"></div>
   <div class="container">
     <div class="footer d-flex justify-content-between align-items-center">
-      <p>&copy;2019 DG Welding & Mfg.</p>
+      <p><?php the_field('footer-copyright', 'option') ?></p>
       <div class="logo">
         <a href="#" class="d-flex align-items-center">
           <img src="/wp-content/uploads/2019/01/logo.png" alt="company logo">
         </a>
       </div>
       <div class="d-flex justify-content-end">
-        <a href="#" class="mr-4">
+        <a href="mailto:<?php the_field('email-address', 'option') ?>" class="mr-4">
         <?php include('includes/email-icon.php'); ?>
           <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
         </a>
-        <a href="#" class="mr-4">
+        <a href="<?php the_field('facebook-url', 'option') ?>" class="mr-4" target="_blank">
         <?php include('includes/facebook-icon.php'); ?>
           <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
         </a>
-        <a href="tel:651-688-2358">651-688-2358</a>
+        <?php 
+        $phoneStr = get_field('phone-number', 'option');
+        $phoneHref = preg_replace('/[^0-9]/', '', $phoneStr); 
+        ?>
+        <a href="tel:<?php echo $phoneHref ?>"><?php the_field('phone-number', 'option'); ?></a>
       </div>
     </div>
   </div>
@@ -43,6 +47,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
 <script src="/wp-content/themes/dg-welding-child/dist/js/main.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
 
 </body>
 </html>

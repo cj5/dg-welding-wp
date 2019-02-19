@@ -1,5 +1,10 @@
 <?php
 
+if( function_exists('acf_add_options_page') ) {
+	acf_add_options_page();
+	acf_add_options_sub_page('Global Content');
+}
+
 function my_theme_enqueue_styles() {
 
 	$parent_style = 'dg-welding-style';
@@ -53,5 +58,12 @@ remove_action(‘wp_head’, ‘adjacent_posts_rel_link_wp_head’, 10, 0);
 remove_action(‘wp_head’, ‘wp_generator’);
 // remove admin bar
 add_filter(‘show_admin_bar’, ‘__return_false’);
+
+
+add_action('admin_init', 'remove_textarea');
+
+function remove_textarea() {
+  remove_post_type_support( 'page', 'editor' );
+}
 
 ?>

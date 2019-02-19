@@ -53,6 +53,8 @@ html{overflow-x:hidden;background-color:#e6e5e5}
 #app p{font-weight:400}
 #app li{margin-bottom:10px}
 #app img{width:100%}
+#app .btn{border:2px solid #c23e2f;border-radius:0;text-transform:uppercase;padding:10px 30px;color:#c23e2f;font-weight:bold}
+#app .btn:hover{background-color:#c23e2f;color:#fff}
 #app .hide{display:none}
 #app .pseudo-underline{position:relative}
 #app .pseudo-underline:before{content:'';position:absolute;width:4rem;height:2px;background:#b3b2b2;bottom:-24px;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
@@ -72,7 +74,7 @@ html{overflow-x:hidden;background-color:#e6e5e5}
 #app .header .top-bar a:hover{color:#e8a9a2}
 #app .header .top-bar-height{height:36px}
 #app .header .header-border{border:2px solid #c23e2f !important}
-#app .hero{position:relative;width:100%;background:url("/wp-content/uploads/2019/01/hero-2.jpg") 0 0 no-repeat;background-size:cover;height:500px}
+#app .hero{position:relative;width:100%;background:url("/wp-content/uploads/2019/01/hero-2.jpg") 50% 0 no-repeat;background-size:cover;height:500px}
 #app .hero .filter{position:absolute;width:100%;height:100%;top:0;left:0;background-color:rgba(25,25,25,0.4)}
 #app .hero .hero-heading{position:relative;left:0;font-family:"IBM Plex Sans",Helvetica,sans-serif;color:#fff;font-size:5rem;line-height:54px;letter-spacing:0;word-spacing:0;z-index:9;-webkit-transition:.4s all ease-in-out;transition:.4s all ease-in-out;text-shadow:0 0 20px #333}
 #app .hero .hero-heading .heading-a{line-height:64px}
@@ -92,16 +94,32 @@ html{overflow-x:hidden;background-color:#e6e5e5}
 #app .img-left{left:0;top:0}
 #app .img-right{right:0;bottom:0}
 #app .carousel-wrapper{position:relative}
+#app .swiper-slide .module{height:400px}
 #app .swiper-arrow{border:solid #666;border-width:0 3px 3px 0;display:inline-block;padding:3px;width:18px;height:18px;-webkit-transition:.2s all ease-in-out;transition:.2s all ease-in-out;outline:0}
 #app .swiper-arrow:hover{border-color:#c23e2f}
+#app .swiper-button-prev,#app .swiper-button-next{bottom:auto}
 #app .swiper-button-prev{left:-2.5rem;background:0;-webkit-transform:rotate(135deg);transform:rotate(135deg)}
 #app .swiper-button-next{right:-2.5rem;background:0;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}
-#app .swiper-pagination{bottom:-2.5rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
+#app .swiper-pagination{display:-webkit-box;display:-ms-flexbox;display:flex;bottom:-2.5rem;left:50%;-webkit-transform:translateX(-50%);transform:translateX(-50%)}
 #app .swiper-pagination-bullet{background:#666;width:10px;height:10px;margin-right:10px;-webkit-transition:.2s all ease-in-out;transition:.2s all ease-in-out;outline:0}
 #app .swiper-pagination-bullet:last-of-type{margin-right:0}
 #app .swiper-pagination-bullet:hover{background:#c23e2f;opacity:1}
 #app .carousel-wrapper.gallery{max-width:800px;margin:auto}
+#app .map-wrapper{height:100%}
+#app .ribbon-fill{display:inline-block;width:100%;height:60px}
+#app .contact-form .btn{margin-top:20px}
 #app .footer{height:140px}
 #app .footer .logo img{max-height:60%}
 #app .icon{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor;position:relative;bottom:2px}
 #app .icon-mail{width:20px;height:20px}
+@media(max-width:1199px){#app .swiper-slide .module{height:370px}
+#app .swiper-button-prev{left:-1.5rem}
+#app .swiper-button-next{right:-1.5rem}
+}@media(max-width:991px){#app .swiper-slide .module{height:390px}
+#app .contact-section a{font-size:14px}
+}@media(max-width:767px){#app .swiper-slide .module{height:auto}
+#app .map-wrapper{height:300px}
+}@media(max-width:575px){#app .swiper-button-prev,#app .swiper-button-next{top:auto;bottom:-42px}
+#app .swiper-button-prev{left:.5rem}
+#app .swiper-button-next{right:.5rem}
+}

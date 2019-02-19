@@ -33,6 +33,16 @@ $gray-90: darken($white, 90%);
 .bg-pattern { background: url('/wp-content/uploads/2019/01/what-the-hex.png') 0 0 repeat; }
 
 // ===========================
+// media queries
+$bp-xl: '(max-width: 1199px)';
+$bp-lg: '(max-width: 991px)';
+$bp-md: '(max-width: 767px)';
+$bp-min-md: '(min-width: 768px)';
+$bp-sm: '(max-width: 575px)';
+$bp-xs: '(max-width: 419px)';
+$bp-xxs: '(max-width: 400px)';
+
+// ===========================
 // font-families
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,700|Viga|Roboto:900');
 $font-1: 'IBM Plex Sans', Helvetica, sans-serif;

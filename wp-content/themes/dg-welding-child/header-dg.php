@@ -20,6 +20,8 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/wp-content/themes/dg-welding-child/dist/css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/css/swiper.min.css">
 
   <?php wp_head(); ?>
 
@@ -33,15 +35,19 @@
     <div class="top-bar">
       <div class="container">
         <div class="top-bar-height d-flex justify-content-end align-items-center">
-          <a href="#" class="mr-4">
+          <a href="mailto:<?php the_field('email-address', 'option') ?>" class="mr-4">
             <?php include('includes/email-icon.php'); ?>
             <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
           </a>
-          <a href="#" class="mr-4">
+          <a href="<?php the_field('facebook-url', 'option') ?>" class="mr-4" target="_blank">
             <?php include('includes/facebook-icon.php'); ?>
             <svg class="icon icon-facebook"><use xlink:href="#icon-facebook"></use></svg>
           </a>
-          <a href="tel:651-688-2358">651-688-2358</a>
+          <?php 
+          $phoneStr = get_field('phone-number', 'option');
+          $phoneHref = preg_replace('/[^0-9]/', '', $phoneStr); 
+          ?>
+          <a href="tel:<?php echo $phoneHref ?>"><?php the_field('phone-number', 'option'); ?></a>
         </div>
       </div>
     </div>
@@ -50,7 +56,7 @@
         <div class="nav-links">
           <ul class="d-flex">
             <li>
-              <a href="/" class="active home">Home</a>
+              <a href="/" class="home">Home</a>
             </li>
             <li>
               <a href="/about" class="about">About</a>
