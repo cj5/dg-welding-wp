@@ -18,7 +18,6 @@ setNavItemActive('contact', '.contact');
 const navicon = document.querySelector('.navicon');
 
 const clickedNavicon = () => {
-  console.log('clicked navicon');
   document.querySelector('.nav-links').classList.toggle('mobile');
   document.querySelector('.navicon').classList.toggle('x');
 }
