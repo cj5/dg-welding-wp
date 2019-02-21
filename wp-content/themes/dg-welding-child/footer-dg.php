@@ -15,14 +15,13 @@
 <div class="footer-wrapper">
   <div class="border-top"></div>
   <div class="container">
-    <div class="footer d-flex justify-content-between align-items-center">
-      <p><?php the_field('footer-copyright', 'option') ?></p>
+    <div class="footer d-flex justify-content-between align-items-center flex-column flex-md-row">
       <div class="logo">
         <a href="#" class="d-flex align-items-center">
           <img src="/wp-content/uploads/2019/01/logo.png" alt="company logo">
         </a>
       </div>
-      <div class="d-flex justify-content-end">
+      <div class="d-flex justify-content-end mt-5 mt-md-0">
         <a href="mailto:<?php the_field('email-address', 'option') ?>" class="mr-4">
         <?php include('includes/email-icon.php'); ?>
           <svg class="icon icon-mail"><use xlink:href="#icon-mail"></use></svg>
@@ -37,6 +36,7 @@
         ?>
         <a href="tel:<?php echo $phoneHref ?>"><?php the_field('phone-number', 'option'); ?></a>
       </div>
+      <p class="mb-5 mb-md-0"><?php the_field('footer-copyright', 'option') ?></p>
     </div>
   </div>
 </div> 

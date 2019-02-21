@@ -53,7 +53,8 @@
     </div>
     <div class="container">
       <nav class="d-flex align-items-center justify-content-between">
-        <div class="nav-links">
+        <div class="navicon d-block d-md-none"></div>
+        <div class="nav-links d-none d-md-block">
           <ul class="d-flex">
             <li>
               <a href="/" class="home">Home</a>

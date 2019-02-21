@@ -95,7 +95,9 @@ html {
   .bold { font-weight: bold; }
   .italic { font-style: italic; }
   .logo, a {
-    height: 100%;    
+    height: 100%;
+    position: relative;
+    z-index: 999; 
     img {
       max-height: 80%;
       width: auto;
@@ -103,9 +105,11 @@ html {
       bottom: 4px;
     }
   }
-  .header {
+  .header {    
     .top-bar {
       background-color: $gray-70;
+      position: relative;
+      z-index: 999;
       a {
         color: $white;
         padding: 0;
@@ -121,8 +125,82 @@ html {
     }
     .header-border {
       border: 2px solid $color-1 !important;
+      position: relative;
+      z-index: 999;
     }
   }
+  @media #{$bp-md} {
+    .nav-links.mobile {
+      display: flex !important;
+      justify-content: center;      
+      position: fixed;
+      width: 100vw;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: #fff;
+      z-index: 99;
+      ul {
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        top: 200px;
+      }
+      li {
+        margin: 0 0 20px;
+      }
+      a {
+        padding-bottom: 0;
+      }
+      @media (max-height: 550px) {
+        ul {
+          flex-direction: row;
+        }
+        li {
+          margin: 0 20px 0;
+        }
+      }
+    }
+  }
+  .navicon {
+    position: relative;
+    height: 18px;
+    width: 24px;
+    cursor: pointer;
+    border: none;
+    z-index: 999;
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 24px;
+      height: 2px;
+      background: black;
+      box-shadow: 
+        0 6px 0 0 black,
+        0 12px 0 0 black;
+    }
+    &.x {
+      &:before, &:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        width: 100%;
+        top: 50%;
+        left: 0;
+        margin-top: -1px;
+        background: black;
+        box-shadow: none;
+      }
+      &:before {
+        transform: rotate(45deg);
+      }
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+  }    
   .hero {
     position: relative;
     width: 100%;
@@ -152,6 +230,12 @@ html {
       text-shadow: 0 0 20px $gray-80;
       .heading-a { line-height: 64px; }
       .heading-b { line-height: 28px; }
+      @media #{$bp-sm} {
+        font-size: 3rem;
+        line-height: 3rem;
+        .heading-a { line-height: 40px; }
+        .heading-b { line-height: 28px; }
+      }
     }
   }
   .content {
@@ -344,9 +428,21 @@ html {
   }
 
   .footer {
+    position: relative;
     height: 140px;
-    .logo img {
-      max-height: 60%;
+    @media #{$bp-md} {
+      height: 300px;
+    }
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      img {
+        max-height: 60%;
+        @media #{$bp-md} {
+          max-height: 110px;
+        }
+      }
     }
   }
 

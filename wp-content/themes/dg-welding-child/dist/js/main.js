@@ -1,5 +1,6 @@
 "use strict";
 
+// Active nav item stuff
 var setNavItemActive = function setNavItemActive(pageSlug, navItem) {
   if (window.location.href.indexOf(pageSlug) > -1) {
     var navItems = document.querySelectorAll('nav a');
@@ -14,4 +15,14 @@ setNavItemActive('', '.home');
 setNavItemActive('about', '.about');
 setNavItemActive('history', '.history');
 setNavItemActive('gallery', '.gallery');
-setNavItemActive('contact', '.contact');
+setNavItemActive('contact', '.contact'); // Navicon stuff
+
+var navicon = document.querySelector('.navicon');
+
+var clickedNavicon = function clickedNavicon() {
+  console.log('clicked navicon');
+  document.querySelector('.nav-links').classList.toggle('mobile');
+  document.querySelector('.navicon').classList.toggle('x');
+};
+
+navicon.addEventListener('click', clickedNavicon);
