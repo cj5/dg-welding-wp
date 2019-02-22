@@ -67,8 +67,9 @@ html{overflow-x:hidden;background-color:#e6e5e5}
 #app nav li:last-child{margin-right:0}
 #app .bold{font-weight:bold}
 #app .italic{font-style:italic}
-#app .logo,#app a{height:100%;position:relative;z-index:999}
+#app .logo,#app a{height:100%;position:relative}
 #app .logo img,#app a img{max-height:80%;width:auto;position:relative;bottom:4px}
+#app .header .logo{position:relative;z-index:999}
 #app .header .top-bar{background-color:#4d4c4c;position:relative;z-index:999}
 #app .header .top-bar a{color:#fff;padding:0;border:0;height:auto}
 #app .header .top-bar a:hover{color:#e8a9a2}
@@ -130,6 +131,7 @@ html{overflow-x:hidden;background-color:#e6e5e5}
 #app .swiper-slide .module{height:auto}
 #app .map-wrapper{height:300px}
 #app .footer{height:300px}
+#app .footer .logo{top:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);height:auto}
 #app .footer .logo img{max-height:110px}
 }@media(max-width:767px) and (max-height:550px){#app .nav-links.mobile ul{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row}
 #app .nav-links.mobile li{margin:0 20px 0}
