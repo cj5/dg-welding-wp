@@ -17,7 +17,7 @@
   <div class="container">
     <div class="footer d-flex justify-content-between align-items-center flex-column flex-md-row">
       <div class="logo">
-        <a href="#" class="d-flex align-items-center">
+        <a href="/" class="d-flex align-items-center">
           <img src="/wp-content/uploads/2019/01/logo.png" alt="company logo">
         </a>
       </div>

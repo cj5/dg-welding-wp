@@ -67,6 +67,9 @@ html {
   nav {
     position: relative;
     height: 100px;
+    @media #{$bp-xs} {
+      height: 80px;
+    }
     li {
       margin-right: 30px;
       margin-bottom: 0;
@@ -148,6 +151,9 @@ html {
         text-align: center;
         position: relative;
         top: 200px;
+        @media #{$bp-xxs} {
+          top: 170px;
+        }
       }
       li {
         margin: 0 0 20px;
@@ -155,7 +161,7 @@ html {
       a {
         padding-bottom: 0;
       }
-      @media (max-height: 550px) {
+      @media (max-height: 550px) and (orientation: landscape) {
         ul {
           flex-direction: row;
         }
@@ -210,6 +216,9 @@ html {
     background: url('/wp-content/uploads/2019/01/hero-2.jpg') 50% 0 no-repeat;
     background-size: cover;
     height: 500px;
+    @media #{$bp-xxs} {
+      height: 350px;
+    }
     .filter {
       position: absolute;
       width: 100%;
@@ -426,8 +435,13 @@ html {
     height: 60px;
   }
 
-  .contact-form .btn {
-    margin-top: 20px;
+  .contact-form {
+    .btn {
+      margin-top: 20px;
+    }
+    .form-control {
+      border-radius: 0;
+    }
   }
 
   .footer {

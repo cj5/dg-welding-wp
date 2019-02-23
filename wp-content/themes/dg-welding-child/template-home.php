@@ -26,7 +26,7 @@ get_header('dg'); ?>
           <?php while ( have_rows('slider-slide') ) : the_row(); ?>
           <div class="swiper-slide">
             <div class="module">
-              <a href="/about">
+              <a href="/gallery">
                 <div class="img-wrapper">
                   <?php $image = get_sub_field('slide-image'); ?>
                   <img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>">
